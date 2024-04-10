@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Imanol Alvarez</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/ima.png" alt="">
+            </div>
+            <h1>IMANOL ALVAREZ</h1>
+            <h2>Estudiante</h2>
+            <div class="redes">
+                <a href="https://github.com/alvarezimanol"><i class="fa-brands fa-github"></i>
+                <a href="https://www.instagram.com/imanolvillegas/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ramiro-imanol-alvarez-/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Imanol Alvarez.</span> Soy una persona comprometida y responsable, con habilidades para el trabajo en equipo. Estoy altamente motivado para mejorar mis habilidades como programador. Busco una oportunidad en una empresa que me brinde un crecimiento tanto personal como profesional.            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Edad</strong>
+                            26 años
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            11-3692-5392
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Alvarezimanol97@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://github.com/alvarezimanol
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Caballito, Ciudad  Autónoma de Buenos Aires
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-film" style="color: #7474fc;"></i>
+                            <span>CINE</span>
+                            
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones" style="color: #74fc8f;"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad" style="color: #ff6d6d;" ></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking" style="color: #74f7fc;"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/15rM6AesU9n8Z_9lzXwagXOZaIZGa0XK3/view?usp=sharing" download="ImanolAlvarez_CV.pdf">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Duras</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>UX Design</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ingles</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Aspectos basicos del UX.</h4>
+                        <span class="casa">Coursera y Google (En curso).</span>
+                        <span class="fecha">fecha - fecha</span>
+                        <p>User Experience Design, prototipado, sprints, diseño de portofolio.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso intensivo de programacion</h4>
+                        <span class="casa">Puerta 18 (32 Horas).</span>
+                        <span class="fecha">01/2024 - 02/2024</span>
+                        <p> JavaScript, UX/UI, React</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programacion Full Stack</h4>
+                        <span class="casa">Puerta 18 (80 Horas).</span>
+                        <span class="fecha">fecha - fecha</span>
+                        <p>HTML, CSS, JavaScript (frontend y backend), SQL, Node.js, base de datos, interaccion en tiempo real con Socket.io</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>User Experience</h4>
+                        <span class="casa">Puerta 18 (40 Horas).</span>
+                        <span class="fecha">fecha - fecha</span>
+                        <p>Figma, Roles UX/UI, User-flow y User Journey, Design thinking.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diseño Web-Front End</h4>
+                        <span class="casa">Puerta 18 (40 Horas).</span>
+                        <span class="fecha">fecha - fecha</span>
+                        <p>UX/UI, CSS, Bootstrap, JavaScript, jQuery.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Primera Etapa Argentina Programa</h4>
+                        <span class="casa">Ministerio de Desarrollo (60 Horas).</span>
+                        <span class="fecha">fecha - fecha</span>
+                        <p>Gobstones, Ruby, JavaScript.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller con orientación artística</h4>
+                        <span class="casa">Julio Argentino Roca.</span>
+                        <span class="fecha">2010 - 2015</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Cajero de estacionamiento y atención al cliente</h4>
+                        <span class="casa">IRSA Inversiones y Representaciones S.A.</span>
+                        <span class="fecha">2022 – Actualidad</span>
+                        <p>Manejo de caja, cierres y arqueos de fondo, atención al cliente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Cajero de campo deportivo y auxiliar de encargado</h4>
+                        <span class="casa">Four Leaf Clover S.R.L.</span>
+                        <span class="fecha">2021 – 2022</span>
+                        <p>Manejo de caja, gestión de pedidos online, control de inventario, recepción de alquileres.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Cajero de heladería y dependiente del mostrador</h4>
+                        <span class="casa">Freddo S.A.</span>
+                        <span class="fecha">2017 – 2020</span>
+                        <p>Manejo de caja, limpieza del establecimiento, despacho de comida, reposición, control de inventario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Cajero de kiosco</h4>
+                        <span class="casa">Kiosco Coghlan</span>
+                        <span class="fecha">2017 – 2017</span>
+                        <p>Manejo de caja, limpieza del establecimiento, repositor, control del inventario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Vendedor y encargado de turno</h4>
+                        <span class="casa">Selfie Store S.R.L.</span>
+                        <span class="fecha">2016 – 2017</span>
+                        <p>Atención al cliente, limpieza del local, reposición, manejo de caja, coordinador de equipo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Empleado de piso y cajero del sector Candy</h4>
+                        <span class="casa">Village Cines S.A.</span>
+                        <span class="fecha">2016 – 2016</span>
+                        <p>Atención al cliente, manejo de caja, control de inventario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Grupo MC</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>El Gran Hotel Budapest</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Rick and Morty API</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Ecommerce Mate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Caballito, Ciudad Autonoma de Buenos Aires
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telefono: 11-3692-5392
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: alvarezimanol97@gmai.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/alvarezimanol"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/imanolvillegas/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ramiro-imanol-alvarez-/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
